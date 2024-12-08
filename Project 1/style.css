@@ -1,0 +1,153 @@
+body {
+    background-color: #fff8e7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: #c3b091;
+    }
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.custom{ /*h1 styling*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color:rgb(79, 107, 143);
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    color:rgb(132, 79, 143);
+    animation: slide 5s ease-in-out 0.5s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-color: aquamarine;
+        transform: translateX(0%);
+    }
+    25%{
+        background-color: lemonchiffon;
+        transform: translateX(-25%);
+    }
+    50%{
+        background-color: lightcoral;
+        transform: translateX(-50%);
+    }
+    75%{
+        background-color: lightpink;
+        transform: translateX(-75%);
+    }
+    100%{
+        background-color: aquamarine;
+        transform: translateX(-100%);
+    }
+}
+
+h3{   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color:rgb(79, 143, 99);
+}
+
+nav {
+    max-width: 100%;
+    height: auto;
+    background-color: #444;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 90px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.city-gallery {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.city-gallery li {
+    margin: 10px;
+    text-align: center;
+}
+
+.city-gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.city-gallery p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+table {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid rgb(244, 114, 134);
+    border-radius: 2%;
+    padding: 1px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f9f9f9;
+    border: 1px solid rgb(244, 114, 134);
+    border-radius: 2%;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid rgb(244, 114, 134);
+    border-radius: 2%;
+    padding: 5px;
+}
+
+form {
+    background-color: azure;
+    border: 3px solid lightpink;
+    border-radius: 5%;
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    max-height: auto;
+}
+
+button {
+    background-color: lightpink;
+    color: white;
+    font-size: large;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20%;
+}
+
+footer {
+    background-color: #edf4b6;
+    text-align: center;
+}
