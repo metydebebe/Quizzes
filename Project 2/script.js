@@ -8,13 +8,17 @@ let completedTasks = 0;
 
 addTaskButton.addEventListener('click', function(){
   const taskText = taskInput.value;
-  
   if (taskText){
     const listItem = document.createElement('li');
     listItem.textContent = taskText;
     listItem.addEventListener('click', function(){
-    listItem.classList.toggle('completed');
-    completedTasks += listItem.classList.contains('completed') ? 1: -1;
+    if (listItem.classList.contains('completed')){
+      listItem.classList.remove('completed');
+      completedTasks--;
+    }else{
+      listItem.classList.add('completed');
+      completedTasks++;
+    }
     updateCounter();
   });
     taskList.appendChild(listItem);
@@ -23,7 +27,7 @@ addTaskButton.addEventListener('click', function(){
 });
 
 resetListButton.addEventListener('click', function(){
-  taskList.replaceChildren(); 
+  taskList.innerHTML = ''; 
   completedTasks = 0;
   updateCounter();
 });
